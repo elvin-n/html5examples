@@ -1,0 +1,69 @@
+.empty
+{
+	background: #fff;
+	padding: 0px;
+	width: 5px;
+	height: 5px;
+
+}
+
+.filled
+{
+	background: #0f0;
+	padding: 0px;
+	width: 5px;
+	height: 5px;
+}
+
+.dashed
+{
+	background: #fff;
+	padding: 0px;
+	width: 5px;
+	height: 5px;
+}
+
+
+/*=== nonogram_table ===*/
+
+body {
+	font-family:Verdana,Arial,sans-serif;
+	font-size:13px;
+}
+
+body, table, td, th, ul, ol, li, p, h1, form, img {
+	padding:0;
+	margin:0;
+	border:0;
+	border-spacing: 0;
+	border-collapse: 0;
+}
+
+.field_table {
+	border: 2px solid black;
+	margin:0;
+}
+
+.field_table td table td {
+	width:20px;
+	height:20px;
+	text-align: center;
+	color: #000000;
+	cursor: pointer;
+	border: 1px solid #8F8F8F;
+	vertical-align: middle;
+	margin:0;
+}
+.field_table td.num_empty {
+	background: #dadada;
+	border-color: #808080;
+	cursor: default;
+	margin: 0;
+}
+
+.field_table td.num {
+	background: #d0d0d0;
+	border-color: #808080;
+	margin:0;
+}
+

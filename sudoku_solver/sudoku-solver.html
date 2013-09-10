@@ -1,0 +1,22 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="sudoku-solver.css"/>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="sudoku-algorithm.js"></script>
+	<script type="text/javascript" src="sudoku-solver.js"></script>
+	<script type="text/javascript" src="initBorderData.js"></script>
+</head>
+<body>
+<div>
+	<select name="sudoku">
+		<option value="Car">Car</option>
+		<option value="Rose">Rose</option>
+	</select>
+	<button onclick="startSolve();">Start</button>
+	<button onclick="stopSolve();">Stop</button>
+</div>
+
+<div id="field"> </div>
+<div id="iteration_counter"></div>
+</body>
+</html>
