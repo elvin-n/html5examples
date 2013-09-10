@@ -1,0 +1,19 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="life.css"/>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="life.js"></script>
+</head>
+<body>
+<button id="start" onclick="onResume();">Resume...</button>
+<button id="pause" onclick="onPause();">Pause</button>
+<input type="radio" name="visualizationType" checked>Change innerHTML</input>
+<input type="radio" name="visualizationType">Update innerHTML</input>
+<input type="radio" name="visualizationType">Canvas 2d</input>
+<br>
+<div>FPS: <div id="fps">0</div></div>
+<br>
+<div id="fieldForLife"></div>
+<canvas width="700" height ="700" id="canvasField"></canvas>
+</body>
+</html>

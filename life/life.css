@@ -1,0 +1,16 @@
+.empty
+{
+	background: #fff;
+	padding: 0px;
+	width: 5px;
+	height: 5px;
+
+}
+
+.filled
+{
+	background: #0f0;
+	padding: 0px;
+	width: 5px;
+	height: 5px;
+}
