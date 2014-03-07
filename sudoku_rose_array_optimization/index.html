@@ -1,0 +1,29 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+  <title>Your New Application</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+  <style type="text/css">
+    /* Prevent copy paste for all elements except text fields */
+    *  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+    input, textarea  { -webkit-user-select:text; }
+  </style>
+<LINK href="core/sudoku-solver.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="core/jquery.js"></script>
+<script type="text/javascript" src="core/sudoku-algorithm.js"></script>
+<script type="text/javascript" src="core/sudoku-solver.js"></script>
+<script type="text/javascript" src="core/initBorderData.js"></script>
+<script>
+    window.onerror = function(e) { alert(e); }
+</script>
+</head>
+<body BGCOLOR="FFFFFF">
+<div>
+    <button onclick="startSolve();" style="font-size:100px">Start</button>
+</div>
+<div id="field"> </div>
+<div id="iteration_counter"></div>
+
+</body>
+</html>
