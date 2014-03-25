@@ -3,6 +3,7 @@ function ArrayStorage() {
   this.mainReference = new Array();
   this.index = new Array();
   this.growSize = 100;
+  this.iterationsToReduce = 0;
 }
 ArrayStorage.prototype.getNewArray = function ( size ){
   if( typeof this.index[size] === 'undefined' ) {
@@ -33,6 +34,16 @@ ArrayStorage.prototype.getNewArray = function ( size ){
 }
 
 ArrayStorage.prototype.reset = function ( size ) {
+    
+  if( this.index[size].head < this.mainReference[size].length ) {
+      this.iterationsToReduce++;
+  }
+  if( this.iterationsToReduce >= 100 ) {
+    this.mainReference[size].splice( this.mainReference[size].length/2, this.mainReference[size].length/2 );
+    this.index[size].length = this.mainReference[size].length;
+    this.iterationsToReduce = 0;
+  }
+  
   this.index[size].head = 0;
 }
 
