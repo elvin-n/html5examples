@@ -8,8 +8,22 @@ and open the template in the editor.
   <head>
     <title>Andrey's Box2d Car Game</title>
     <meta charset="UTF-8">
+    <script src="require.js"></script>
     <script type="text/javascript" src="Box2dWeb-2.1.a.3.js"></script>
-    <script type="text/javascript" src="game_logic.js"></script>
+    <script>
+      var logic;
+
+      requirejs.config({
+        baseUrl: '.',
+        paths: {
+          app: '.'
+        }
+      });
+      require(['game_logic'], function (foo) {
+        logic = require('game_logic');
+        logic.init('canvas');
+      });
+    </script>    
   </head>
   <body>
     <canvas id="canvas" width="1000" height="480"></canvas>    
